@@ -1,8 +1,4 @@
-from .CANopenMessage import CANopenMessage
-from .CANopenNMT import CANopenNMT
-from .CANopenNode import CANopenNode
-from .CANopenPDO import CANopenPDO, CANopenTPDO, CANopenRPDO
-from .CANopenSDO import CANopenSDO, CANopenClientSDO, CANopenServerSDO
+from CANopenCP.CANopenSDO import CANopenSDO, CANopenClientSDO, CANopenServerSDO
 
 __all__ = [
     'CANopenMessage',
