@@ -9,10 +9,6 @@ import time
 from adafruit_mcp2515 import Message
 from CANopenCP import CANopenNode, CANopenClientSDO, CANopenServerSDO, CANopenSDO
 
-# Index and subindex for the parameter you want
-index = 0x1234  # example value
-subindex = 0x01  # example value
-
 class CANMessage:
     def __init__(self, id, data):
         self.id = id
