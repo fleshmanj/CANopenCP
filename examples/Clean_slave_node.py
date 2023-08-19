@@ -10,16 +10,6 @@ from adafruit_mcp2515 import Message
 from CANopenCP.CANopenNode import CANopenSlaveNode
 from CANopenCP import CANopenNode, CANopenClientSDO, CANopenServerSDO, CANopenSDO
 
-class CANMessage:
-    def __init__(self, id, data):
-        self.id = id
-        self.data = data
-        self.extended = False
-
-def sdo_to_can_message(sdo_msg):
-    return CANMessage(sdo_msg.id, sdo_msg.data)
-
-
 class CANConnection:
 
     def __init__(self):
