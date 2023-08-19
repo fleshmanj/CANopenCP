@@ -43,11 +43,12 @@ if __name__ == "__main__":
 
     master = CANopenMasterNode(1, can.mcp)
 
-    data = 0xAABBCCDD
+    data = 0x00
 
     while True:
         # Update data in the Master node
         new_data = update_data(data)
+        data = new_data
 
         # Master sends a write request to the slave with the updated data
         master.send_write_request(index, subindex, new_data)
