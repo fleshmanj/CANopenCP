@@ -12,4 +12,5 @@ __all__ = [
     'CANopenSDO',
     'CANopenClientSDO',
     'CANopenServerSDO',
+    'States'
 ]
