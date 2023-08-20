@@ -24,7 +24,7 @@ if __name__ == "__main__":
     can = CANConnection()
 
     slave = CANopenSlaveNode(2, can.mcp)  # Assuming the node ID of the slave is 2
-    slave.data_dict = {(0x1234, 0x01): struct.pack("<I", 0xAABBCCDD)}
+    slave.data_dict = {(0x1234, 0x01): bytearray(256)}
 
     while True:
         # Slave listens for a request and sends a response if applicable

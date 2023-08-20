@@ -1,6 +1,4 @@
-from enum import Enum
-
-class CANopenSDOStates(Enum):
+class CANopenSDOStates:
 
     CO_SDO_ST_IDLE = 0x00
     CO_SDO_ST_ABORT = 0x01
